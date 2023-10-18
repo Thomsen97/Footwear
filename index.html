@@ -11,6 +11,60 @@
     <title>Footwear</title>
 </head>
 <body>
-    
+    <div id="grid-container">
+    <header>
+        <nav>
+            <a href="index.html" id="logo">Footwear</a>
+            <div class="nav-icons">
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="#">Herre</a></li>
+                <li><a href="#">Dame</a></li>
+                <li><a href="#">Barn</a></li>
+                <li><a href="#">Merker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="kampanje">
+            <img src="img/DreamShaper_v7_winter_shoes_in_the_show_3.jpg" alt="Winter shoes">
+            <h3>Vinteren er på vei! Sjekk ut vår vinterkampanje</h3>
+            <a href="#" class="black-btn">Se tilbud</a>
+        </section>
+        <section>
+            <article>
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                <h3>Løpesko</h3>
+                <a href="#" class="read-more-btn">Gå til produkt</a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                <h3>Løpesko</h3>
+                <a href="#" class="read-more-btn">Gå til produkt</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+    <script>
+
+        let x = document.querySelector(".navbar")
+
+        document.getElementById("ham").addEventListener("click", (e) =>{
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar"
+            }
+        })
+    </script>
 </body>
 </html>
