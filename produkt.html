@@ -1,16 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <link href="css/font/css/fontawesome.css" rel="stylesheet">
-    <link href="css/font/css/brands.css" rel="stylesheet">
-    <link href="css/font/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Footwear</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Handlevogn</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo">Footwear</a>
+                <div>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <ul class="navbar">
+                    <li>
+                        <a href="#">Herre<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dame<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Barn<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Merker<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <section>
+                    <input class="search-bar" type="text" placeholder="Søk etter produkter">
+                </section> 
+            </nav>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="#">Herre</a></li>
+                <li><a href="#">Joggesko</a></li>
+                <li id="breadcrumb-current">Nike Outlaw</li>
+            </ul>
+        </header>
+        <main>
+            <h1>Nike Outlaw</h1>
+            <section class="produkt-main">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">                
+            </section>
+            <section class="produkt-alt">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+            </section>
+            <section class="size-section">
+                <form action="#">
+                    <label for="size">Størrelse:</label>
+                    <select name="size" id="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40" selected>40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    <a href="handlevogn.html" class="add-to-cart-btn">Legg til i handlekurv</a>
+                </form>
+            </section>
+            <section class="produkt-info">
+                <h3>Produktinfo:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores itaque, sint modi explicabo veritatis odio totam error. <a href="#">Les mer</a></p>
+            </section>
+            <h4>Lignende produkter:</h4>
+            <section class="produkter">
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Nike Outlaw</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Nike Outlaw</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Nike Outlaw</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Nike Outlaw</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Nike Outlaw</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+                <article>
+                    <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Løpesko">
+                    <h3>Løpesko</h3>
+                    <section class="produkt-pris-forside">
+                        <p>kr 500,-</p>
+                        <a href="produkt.html" class="buy-btn">Kjøp</a>
+                    </section>
+                </article>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <section>
+                <h3>Om oss:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><a href="#">Les mer</a></p>
+            </section>
+            <section class="kundeservice">
+                <h3>Kundeservice:</h3>
+                <ul>
+                    <li><a href="#">Kontakt oss</a></l1>
+                    <li><a href="#">Finn butikk</a></l1>
+                    <li><a href="#">Størrelsesguide</a></l1>
+                </ul>
+            </section>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
 </html>
