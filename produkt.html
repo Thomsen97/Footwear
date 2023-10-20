@@ -18,7 +18,7 @@
                 <div>
                     <i id="ham" class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-shopping-cart"></i>
+                    <a href="handlevogn.html"><i class="fa-solid fa-shopping-cart"></i></a>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <ul class="navbar">
@@ -76,40 +76,69 @@
         </header>
         <main>
             <h1>Nike Outlaw</h1>
-            <section class="produkt-main">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">                
-            </section>
-            <section class="produkt-alt">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-                <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
-            </section>
-            <section class="size-section">
-                <form action="#">
-                    <label for="size">Størrelse:</label>
-                    <select name="size" id="size">
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40" selected>40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="48">48</option>
-                    </select>
-                    <a href="handlevogn.html" class="add-to-cart-btn">Legg til i handlekurv</a>
-                </form>
-            </section>
-            <section class="produkt-info">
-                <h3>Produktinfo:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores itaque, sint modi explicabo veritatis odio totam error. <a href="#">Les mer</a></p>
+            <section class="produkt-container">
+                <section class="picture-container">
+                    <section class="produkt-main">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">                
+                    </section>
+                    <section class="produkt-alt">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Produktbilde">
+                    </section>
+                </section>
+                <section class="produkt-valg">
+                    <form id="color">
+                        <label for="color">Farge:</label>
+                        <select name="color" id="color">
+                            <option value="black">Svart</option>
+                            <option value="white">Hvit</option>
+                            <option value="red">Rød</option>
+                            <option value="blue">Blå</option>
+                            <option value="green">Grønn</option>
+                            <option value="yellow">Gul</option>
+                            <option value="orange">Orange</option>
+                            <option value="purple">Lilla</option>
+                            <option value="pink">Rosa</option>
+                            <option value="brown">Brun</option>
+                            <option value="gray">Grå</option>
+                        </select>
+                    </form>
+                    <section class="size-section">
+                        <form action="#">
+                            <label for="size">Størrelse:</label>
+                            <select name="size" id="size">
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40" selected>40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="48">48</option>
+                            </select>  
+                        </form>
+                        <form id="levering-metode">
+                            <label for="leverig" class="levering">Levering:</label>
+                            <input type="radio" name="levering" id="hjemlevering" value="hjemlevering">
+                            <label for="hjemlevering">Hjemlevering</label>
+                            <input type="radio" name="levering" id="postkontor" value="postkontor">
+                            <label for="postkontor">Postkontor</label>
+                        </form>
+                        <a href="handlevogn.html" class="add-to-cart-btn">Legg til i handlekurv</a>
+                    </section>
+                    <section class="produkt-info">
+                        <h3>Produktinfo:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores itaque, sint modi explicabo veritatis odio totam error. <a href="#">Les mer</a></p>
+                    </section>
+                </section>
             </section>
             <h4>Lignende produkter:</h4>
             <section class="produkter">

@@ -1,16 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <link href="css/font/css/fontawesome.css" rel="stylesheet">
-    <link href="css/font/css/brands.css" rel="stylesheet">
-    <link href="css/font/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Footwear</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Handlevogn</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo">Footwear</a>
+                <div>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="handlevogn.html"><i class="fa-solid fa-shopping-cart"></i></a>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <ul class="navbar">
+                    <li>
+                        <a href="#">Herre<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dame<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Barn<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Merker<i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                            <li><a href="#">Underkategori</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <section>
+                    <input class="search-bar" type="text" placeholder="Søk etter produkter">
+                </section> 
+            </nav>
+        </header>
+        <main>
+            <h1>Handlevogn</h1>
+            <section>
+                
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <section>
+                <h3>Om oss:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><a href="#">Les mer</a></p>
+            </section>
+            <section class="kundeservice">
+                <h3>Kundeservice:</h3>
+                <ul>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#">Finn butikk</a></li>
+                    <li><a href="#">Størrelsesguide</a></li>
+                </ul>
+            </section>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
 </html>
