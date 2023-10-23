@@ -1,3 +1,11 @@
+/* Alle bildene i denne oppgaven ble generert med ai generatoren leonaro.ai. https://www.leonardo.ai/ */
+
+/* Måtte gjøre noen endringer fordi jeg ikke fikk til alt som jeg lagde i wireframsa, gikk derfor for andre løsninger
+som kanskje endte opp med å se bedre ut, og var lettere for meg å få til. For eksempel navbaren på mobil. Der valgte jeg å bytte fra
+navbar i bunnen til å lage en navbar i toppen som det er på de fleste andre nettbutikker. */
+
+/* Rakk ikke å gjøre footeren for desktop lik med enda en kategori meny, så den ser ganske tom ut på desktop. */
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -7,6 +15,8 @@ body{
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
+
+/* CSS for navbar */
 
 .navbar {
     display: none;
@@ -31,6 +41,7 @@ body{
     width: 100%;
     list-style: none;
 }
+
 
 .responsive a{
     color: #fff;
@@ -85,6 +96,11 @@ header nav div{
     gap: 1rem;
 }
 
+.search-bar {
+    display: none;
+}
+/* */
+
 .breadcrumb {
     display: flex;
     list-style: none;
@@ -114,16 +130,11 @@ header nav div{
     padding: 0;
 }
 
-
-
-.search-bar {
-    display: none;
-}
-
 main{
     grid-area: main;
 }
 
+/* CSS for index.html */
 .kampanje {
     background-color: rgb(148, 148, 148);
     border-radius: 10px;
@@ -180,7 +191,10 @@ main{
     max-width: fit-content;
     font-weight: 600;
 }
+/* */
 
+
+/* CSS for produkt.html */
 main h1{
     margin: 0;
 }
@@ -213,15 +227,18 @@ main h4 {
     flex-direction: column;
 }
 
+.produkt-valg p {
+    margin-bottom: 0;
+}
+
 .produkt-info {
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     background-color: rgb(148, 148, 148);
     border-radius: 10px;
 }
-
 
 .produkt-info h3 {
     margin: 0;
@@ -242,7 +259,7 @@ main h4 {
     background-color: #171717;
     color: #fff;
     border-radius: 10px;
-    font-weight: 400;;
+    font-weight: 400;
 }
 
 #size {
@@ -270,8 +287,94 @@ main h4 {
 #color {
     display: none;
 }
+/* */
+
+/* CSS for handlevogn.html */
+.fa-x {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.handlevogn-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 148, 148);
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.handlevogn-container h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.handlevogn-produkt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.handlevogn-produkt img {
+    display: flex;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.handlevogn-produkt h2 {
+    font-size: 16px;
+    max-width: 55px;
+}
+
+.produkt-antall {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: fit-content;
+    justify-content: space-between;
+}
+
+.antall-knapp {
+    color: rgb(148, 148, 148);
+    border-radius: 5px;
+}
+
+.total-pris {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    align-items: center;
+    
+}
+
+.buy-now-btn {
+    display: inline-block;
+    padding: 10px;
+    width: fit-content;
+    margin: 1rem 0;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.buy-btn-container {
+    display: flex;
+    justify-content: center;
+}
 
 
+/* */
+
+/* CSS for footer */
 footer{
     grid-area: footer;
     display: flex;
@@ -280,6 +383,7 @@ footer{
 
 footer section p {
     margin: 0;
+    max-width: 150px;
 }
 
 footer section p a {
@@ -289,11 +393,14 @@ footer section p a {
 .kundeservice ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .kundeservice ul li a{
     color: #000;
 }
+/* */
 
 
 @media only screen and (min-width:600px){
@@ -450,9 +557,43 @@ footer section p a {
         margin: 0.5rem;
     }
 
+    #levering-metode {
+        display: inline-block;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: fit-content;
+    }
+
+    /* CSS desktop handlevogn.html */
+    .handlevogn-produkt {
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .handlevogn-produkt h2 {
+        max-width: fit-content;
+        font-size: 1rem;
+    }
+
+    .handlevogn-produkt img {
+        width: 300px;
+        height: 250px;
+        border-radius: 0;
+    }
+
+    .antall-knapp {
+        border-radius: 0px;
+        margin: 1rem;
+    }
+
     footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .kundeservice li a {
+        padding: 0;
     }
 
 
