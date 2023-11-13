@@ -3,6 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Utforsk et bredt sortemang av sko hos Footwear. Handle etter stilfulle sneakers, løpesko, varme vintersko og skinnende pensko. Utforsk de store merkene som Nike and Adidas. Perfekte sko for menn, damer og barn for en hver anledning.">
+        <meta name="author" content="Sebastian Thomsen">
+        <!---Facebook meta-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Handlevogn - Footwear.">
+        <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/Footwear/handlevogn.html">
+        <!--Twitter meta-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Handlevogn - Footwear.">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/Footwear/handlevogn.html">
+        <!---->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,17 +22,25 @@
         <title>Handlevogn</title>
     </head>
     <body>
+        <a href="#main-content" class="skip-to-content" aria-label="Gå til hovedinnhold">Gå til hovedinnhold</a>
+        <hr>
         <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html" id="logo">Footwear</a>
+                <a href="index.html" id="logo" aria-label="Footwear - Hjem">Footwear</a>
                 <div>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="handlevogn.html"><i class="fa-solid fa-shopping-cart"></i></a>
-                    <i class="fa-solid fa-user"></i>
+                    <i id="ham" class="fa-solid fa-bars" aria-label="Meny"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i>
+                    <a href="handlevogn.html">
+                        <span class="visually-hidden">Handlevogn</span>
+                        <i class="fa-solid fa-shopping-cart" aria-label="Handlekurv" role="link"></i>
+                    </a>
+                    <i class="fa-solid fa-user" aria-label="Min konto"></i>
                 </div>
                 <ul class="navbar">
+                    <li>
+                        <a href="analyse.html" aria-label="Analyse side">Analyse</a>
+                    </li>
                     <li>
                         <a href="#">Herre<i class="fa-solid fa-caret-down"></i></a>
                         <ul>
@@ -64,15 +83,16 @@
                     </li>
                 </ul>
                 <section>
-                    <input class="search-bar" type="text" placeholder="Søk etter produkter">
+                    <label for="search" class="visually-hidden">Search for products:</label>
+                    <input id="search" class="search-bar" type="text" placeholder="Søk etter produkter">
                 </section> 
             </nav>
         </header>
-        <main>
+        <main id="main-content">
             <section class="handlevogn-container">
                 <i class="fa-solid fa-x"></i>
                 <h1>Varer i handlevogn:</h1>
-                <section class="handlevogn-produkt">
+                <section class="handlevogn-produkt" aria-label="Nike Outlaw løpesko i handlekurv">
                     <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko Outlaw">
                     <h2>Nike Outlaw</h2>
                     <div class="produkt-antall">
@@ -82,7 +102,7 @@
                     </div>  
                     <p>Pris: 500,-</p>
                 </section>
-                <section class="handlevogn-produkt">
+                <section class="handlevogn-produkt" aria-label="Nike Outlaw løpesko i handlekurv">
                     <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko Outlaw">
                     <h2>Nike Outlaw</h2>
                     <div class="produkt-antall">
@@ -92,7 +112,7 @@
                     </div>  
                     <p>Pris: 500,-</p>
                 </section>
-                <form id="levering-metode">
+                <form id="levering-metode" aria-label="Velg leveringsmetode">
                     <h3>Leveringsmetode:</h3>
                     <input type="radio" name="levering" id="hjemlevering" value="hjemlevering">
                     <label for="hjemlevering">Hjemlevering</label>

@@ -116,7 +116,7 @@ header nav div{
 }
 
 .breadcrumb li a{
-    color: gray;
+    color: #2c2c2c;
     text-decoration: none;
     font-style:italic;
     font-size: 1rem;
@@ -250,6 +250,10 @@ main h4 {
     padding: 0 5px;
 }
 
+.produkt-info a {
+    color: #000;
+}
+
 .add-to-cart-btn{
     display: inline-block;
     padding: 5px;
@@ -339,7 +343,7 @@ main h4 {
 }
 
 .antall-knapp {
-    color: rgb(148, 148, 148);
+    color: rgb(0, 0, 0);
     border-radius: 5px;
 }
 
@@ -402,6 +406,165 @@ footer section p a {
 }
 /* */
 
+/* CSS for analyse.html */
+/* Lighthouse SEO*/
+h2 {
+    text-align: center;
+}
+
+.seo-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol li {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.trends {
+   flex-basis: 48%;
+   margin: 10px;
+   text-align: center;
+   background-color: #000;
+   color: #fff;
+   border-radius: 10px;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.trends p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+.lighthouse-seo {
+    justify-content: space-between;
+    flex-basis: 48%;
+    margin: 10px;
+    text-align: center;
+}
+
+.lighthouse-seo p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.lighthouse-seo img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+/* */
+/* WAVE UU */
+.uu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uu-container h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.wave-uu {
+    justify-content: space-between;
+    flex-basis: 48%;
+    margin: 10px;
+    text-align: center;
+}
+
+.wave-uu p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.wave-uu img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+/* */
+/* ChatGPT SEO & UU */
+.chat-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chat-container h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.chat {
+    justify-content: space-between;
+    flex-basis: 48%;
+    margin: 10px;
+    text-align: center;
+}
+
+.chat p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+/* */
+/* CSS for tabell */
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+/* */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .forbedring-summary {
+    width: 50%;
+  }
+
+ .skip-to-content {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+ }
+  
 
 @media only screen and (min-width:600px){
     #grid-container{
@@ -595,6 +758,8 @@ footer section p a {
     .kundeservice li a {
         padding: 0;
     }
+
+    /* CSS desktop analyse.html */
 
 
 }

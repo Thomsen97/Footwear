@@ -3,6 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Utforsk et bredt sortemang av sko hos Footwear. Handle etter stilfulle sneakers, løpesko, varme vintersko og skinnende pensko. Utforsk de store merkene som Nike and Adidas. Perfekte sko for menn, damer og barn for en hver anledning.">
+        <meta name="author" content="Sebastian Thomsen">
+        <!---Facebook meta-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Kjøp Nike Oulaw hos Footwear.">
+        <meta property="og:image" content="img/DreamShaper_v7_running_shoes_with_gray_background_3">
+        <meta property="og:description" content="Nike Outlaw - Perfekte løpesko for deg som ønsker en komfortabel sko for alle terreng.">
+        <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/Footwear/produkt.html">
+        <!--Instagram meta-->
+        <meta property="instapp:photo" content="img/DreamShaper_v7_running_shoes_with_gray_background_3">
+        <meta property="instapp:hashtags" content="nike, løpesko, joggesko, komfortabel, footwear">
+        <!--Twitter meta-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Kjøp Nike Outlaw hos Footwear.">
+        <meta name="twitter:image" content="img/DreamShaper_v7_running_shoes_with_gray_background_3">
+        <meta name="twitter:description" content="Perfekte løpesko for deg som ønsker en komfortabel sko for alle terreng.">
+        <meta name="twitter:image:alt" content="Nike Oulaw løpesko med grå bakgrunn.">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/Footwear/produkt.html">
+        <!---->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,17 +30,25 @@
         <title>Nike Outlaw</title>
     </head>
     <body>
+        <a href="#main-content" class="skip-to-content" aria-label="Gå til hovedinnhold">Gå til hovedinnhold</a>
+        <hr>
         <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html" id="logo">Footwear</a>
+                <a href="index.html" id="logo" aria-label="Footwear logo og hjem knapp">Footwear</a>
                 <div>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="handlevogn.html"><i class="fa-solid fa-shopping-cart"></i></a>
-                    <i class="fa-solid fa-user"></i>
+                    <i id="ham" class="fa-solid fa-bars" aria-label="Meny"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i>
+                    <a href="handlevogn.html">
+                        <span class="visually-hidden">Handlevogn</span>
+                        <i class="fa-solid fa-shopping-cart" aria-label="Handlekurv"></i>
+                    </a>
+                    <i class="fa-solid fa-user" aria-label="Min konto"></i>
                 </div>
                 <ul class="navbar">
+                    <li>
+                        <a href="analyse.html" aria-label="Analyse side">Analyse</a>
+                    </li>
                     <li>
                         <a href="#">Herre<i class="fa-solid fa-caret-down"></i></a>
                         <ul>
@@ -64,22 +91,37 @@
                     </li>
                 </ul>
                 <section>
-                    <input class="search-bar" type="text" placeholder="Søk etter produkter">
+                    <label for="search" class="visually-hidden">Search for products:</label>
+                    <input id="search" class="search-bar" type="text" placeholder="Søk etter produkter">
                 </section> 
             </nav>
-            <ul class="breadcrumb">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="#">Herre</a></li>
-                <li><a href="#">Joggesko</a></li>
-                <li id="breadcrumb-current">Nike Outlaw</li>
+            <ul class="breadcrumb" aria-label="Navigasjonssti" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="index.html"><span itemprop="name">Forside</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">Herre</span></a>
+                    <meta itemprop="position" content="2">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">Joggesko</span></a>
+                    <meta itemprop="position" content="3">
+                </li>
+                <li id="breadcrumb-current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Nike Outlaw</span>
+                    <meta itemprop="position" content="3">
+                </li>
             </ul>
         </header>
-        <main>
+        <main id="main-content">
             <h1>Nike Outlaw</h1>
-            <section class="produkt-container">
+            <section class="produkt-container" itemscope itemtype="https://schema.org/Product">
+                <meta itemprop="brand" content="Nike">
+                <meta itemprop="name" content="Nike Outlaw">
+                <div itemprop="aggregateRating"  itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4">
+                    <meta itemprop="ratingCount" content="69">
+                </div>
                 <section class="picture-container">
                     <section class="produkt-main">
-                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko">                
+                        <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko" itemprop="image">                
                     </section>
                     <section class="produkt-alt">
                         <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko">
@@ -90,8 +132,11 @@
                         <img src="img/DreamShaper_v7_running_shoes_with_gray_background_3.jpg" alt="Nike Outlaw løpesko">
                     </section>
                 </section>
-                <section class="produkt-valg">
-                    <p>Pris: 500,-</p>
+                <section class="produkt-valg" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <link itemprop="availability" href="http://schema.org/InStock">
+                    <link itemprop="itemCondition" href="http://schema.org/NewCondition">
+                    <p itemprop="price" content="500.00">500,00 kr</p>
                     <form id="farger">
                         <label for="color">Farge:</label>
                         <select name="color" id="color">
@@ -130,7 +175,7 @@
                     </section>
                     <section class="produkt-info">
                         <h3>Produktinfo:</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores itaque, sint modi explicabo veritatis odio totam error. <a href="#">Les mer</a></p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores itaque, sint modi explicabo veritatis odio totam error. <a href="#">Les mer</a></p>
                     </section>
                 </section>
             </section>

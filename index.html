@@ -3,6 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Utforsk et bredt sortemang av sko hos Footwear. Handle etter stilfulle sneakers, løpesko, varme vintersko og skinnende pensko. Utforsk de store merkene som Nike and Adidas. Perfekte sko for menn, damer og barn for en hver anledning.">
+        <meta name="author" content="Sebastian Thomsen">
+        <!---Facebook meta-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Footwear - Sko for en hver anledning.">
+        <meta property="og:image" content="img/DreamShaper_v7_winter_shoes_in_the_show_3">
+        <meta property="og:description" content="Utforsk sko til en hver anledning, enten du trenger nye løpesko, vintersko eller pensko. Vi har alt du kunne trenge til herrer, damer og barn.">
+        <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/Footwear/index.html">
+        <!--Instagram meta-->
+        <meta property="instapp:photo" content="img/DreamShaper_v7_winter_shoes_in_the_show_3">
+        <meta property="instapp:hashtags" content="pensko, løpesko, joggesko, vintersko, herresko, damesko, barnesko, footwear">
+        <!--Twitter meta-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Footwear - Sko for en hver anledning.">
+        <meta name="twitter:image" content="img/DreamShaper_v7_winter_shoes_in_the_show_3">
+        <meta name="twitter:description" content="Utforsk sko til en hver anledning, enten du trenger nye løpesko, vintersko eller pensko. Vi har alt du kunne trenge til herrer, damer og barn.">
+        <meta name="twitter:image:alt" content="Vintersko på utstilling.">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/Footwear/index.html">
+        <!---->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,17 +30,25 @@
         <title>Footwear</title>
     </head>
     <body>
+        <a href="#main-content" class="skip-to-content" aria-label="Gå til hovedinnhold">Gå til hovedinnhold</a>
+        <hr>
         <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html" id="logo">Footwear</a>
+                <a href="index.html" id="logo" aria-label="Footwear - Hjem">Footwear</a>
                 <div>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="handlevogn.html"><i class="fa-solid fa-shopping-cart"></i></a>
-                    <i class="fa-solid fa-user"></i>
+                    <i id="ham" class="fa-solid fa-bars" aria-label="Meny"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-label="Søk"></i>
+                    <a href="handlevogn.html">
+                        <span class="visually-hidden">Handlevogn</span>
+                        <i class="fa-solid fa-shopping-cart" aria-label="Handlekurv"></i>
+                    </a>
+                    <i class="fa-solid fa-user" aria-label="Min konto"></i>
                 </div>
                 <ul class="navbar">
+                    <li>
+                        <a href="analyse.html" aria-label="Analyse side">Analyse</a>
+                    </li>
                     <li>
                         <a href="#">Herre<i class="fa-solid fa-caret-down"></i></a>
                         <ul>
@@ -64,12 +91,13 @@
                     </li>
                 </ul>
                 <section>
-                    <input class="search-bar" type="text" placeholder="Søk etter produkter">
+                    <label for="search" class="visually-hidden">Search for products:</label>
+                    <input id="search" class="search-bar" type="text" placeholder="Søk etter produkter">
                 </section>
             </nav>
             <h1>Sko for hele familien!</h1>
         </header>
-        <main>
+        <main id="main-content">
             <section class="kampanje">
                 <img src="img/DreamShaper_v7_winter_shoes_in_the_show_3.jpg" alt="Vintersko kampanje bilde">
                 <h2>Vintersko kampanje</h2>
